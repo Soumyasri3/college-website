@@ -9,7 +9,6 @@ jobs:
 build:
 runs-on: ubuntu-latest
 
-```
 steps:
   - name: Checkout Repository
     uses: actions/checkout@v4
@@ -25,4 +24,3 @@ steps:
 
   - name: Push Docker Image
     run: docker push soumyath/college-website:latest
-```
