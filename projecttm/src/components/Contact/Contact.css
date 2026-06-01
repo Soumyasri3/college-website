@@ -1,0 +1,97 @@
+.contact {
+  margin: 80px auto;
+  max-width: 90%;
+  padding: 40px;
+  background: #f4f7fb;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact-col {
+  flex-basis: 48%;
+  color: #333;
+  padding: 20px;
+}
+
+.contact-col h3 {
+  color: #000F38;
+  font-weight: 600;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-col h3 img {
+  width: 35px;
+  margin-left: 12px;
+  filter: drop-shadow(1px 1px 1px #ccc);
+}
+
+.contact-col p {
+  max-width: 500px;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.contact-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-col ul li {
+  display: flex;
+  align-items: flex-start;
+  margin: 15px 0;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.4;
+  position: relative;
+  padding-left: 30px;
+}
+
+.contact-col ul li::before {
+  content: "📍";
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+}
+
+.contact-col ul li:nth-child(1)::before {
+  content: "✉️";
+}
+.contact-col ul li:nth-child(2)::before {
+  content: "📞";
+}
+.contact form input,.contact form textarea{
+  display: block;
+  width: 100%;
+  background: #EBECEF;
+  padding:15px;
+  border:0;
+  outline:0;
+  margin-bottom: 15px;
+  resize: none;
+}
+.btn{
+  background-color: blue;
+  color: #EBECEF;
+}
+.contact-col span{
+  display: block;
+  margin:20px 0;
+}
+@media(max-width:700px){
+  .contact{
+    display: block;
+  }
+  .contact-col{
+    padding: 20px;
+
+  }
+}

@@ -1,0 +1,32 @@
+.main{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    font-family: 600;
+    text-transform: uppercase;
+    margin:80px 0 20px;
+}
+.Main h2{
+    font-size: 30px;
+    color:blueviolet;
+    margin-top: 4px;
+    text-transform: none;
+}    
+@media (max-width:850px){
+  .main-text h1{
+    font-size: 40px;
+
+  }
+}
+@media (max-width:850px){
+  .main-text h1{
+    font-size: 30px;
+    max-width: 400px;
+    margin: auto;
+    
+  }
+  .main-text p{
+    font-size: 14px;
+    margin:15px auto 
+  }
+}
