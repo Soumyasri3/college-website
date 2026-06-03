@@ -13,18 +13,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # 1. Install Node.js environment
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-level: 20
-
-      # 2. Install dependencies and generate the 'build' folder
-      - name: Install Dependencies and Build React App
-        run: |
-          npm install
-          npm run build
-
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
